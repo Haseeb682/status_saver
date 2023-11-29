@@ -1,0 +1,27 @@
+name: uri_to_file
+description: A Flutter plugin for converting supported uri to file. Supports Android & iOS.
+homepage: https://github.com/Nikhil1999/uri-to-file
+repository: https://github.com/Nikhil1999/uri-to-file
+issue_tracker: https://github.com/Nikhil1999/uri-to-file/issues
+version: 0.2.0
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: in.lazymanstudios.uri_to_file
+        pluginClass: UriToFilePlugin
+      ios:
+        pluginClass: UriToFilePlugin
